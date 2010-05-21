@@ -35,11 +35,16 @@ table {
 td {
     margin:0px;
   padding:0px;
-  }
+}
+
+input,textarea {
+      border:1px solid gray;
+}
+
 #screen {
     position:absolute;
     border: 1px solid black;
-    background-color: #999;
+    background-color: #fff;
     top:0;
     right:0;
     left:0;
@@ -48,15 +53,14 @@ td {
 }
 #content {
     position:absolute;
-    border: 1px solid red;
-    background-color: #aaa;
-    top:25px;
+    border-top: 2px solid greenyellow;
+    background-color: #fff;
+    top:100px;
     right:10px;
     left:10px;
     bottom:10px;
 }
 #menu {
-    border: 1px solid yellow;
     position: absolute;
     overflow: hidden;
     left: 0px;
@@ -65,7 +69,6 @@ td {
     width: 300px;  
 }
 #container {
-    border: 1px solid white;
     position: absolute;
     overflow: hidden;
     left:310px;
@@ -79,13 +82,10 @@ td {
     bottom:0px;
     top:0px;
     right:200px;
-    border: 1px solid green;
     overflow:auto;
 
 }
 #tools {
-    border: 1px solid cyan;
-    background-color: brown;
     position: absolute;
     overflow: hidden;
     width: 190px;
@@ -95,14 +95,13 @@ td {
 }
 .menu-section {
     position:relative;
-    border: 1px solid yellow;
     overflow:hidden;
     height: 200px;
 }
 .section {
     position:relative;
-    border: 1px solid blue;
     overflow:auto;
+    margin-bottom: 25px;
 }
 .sub-section {
     border:1px dashed white;    
@@ -116,6 +115,16 @@ td {
     position:relative;
     overflow:auto;
 }
+
+.section .title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.section .hd {
+    border-bottom: 2px solid black;
+}
+
 .menu-section .bd {
     position:relative;
     overflow:auto;
@@ -147,3 +156,6 @@ width:100px;
 background-color:red;
 }
 
+.title {
+    font-weight: bold;
+}
