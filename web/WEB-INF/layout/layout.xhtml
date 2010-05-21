@@ -10,20 +10,25 @@
         <link rel="stylesheet" href="css/concept.css"/>
     </h:head>
     <h:body>
-        <div id="screen">
-            <div id="content">
-                <div id="menu">
-                    <ui:insert name="menu"/>
-                </div>
-                <div id="container">
-                    <div id="form">
-                        <ui:insert name="form"/>
+        <f:ajax>
+
+            <div id="screen">
+                <div id="content">
+                    <div id="menu">
+                        <ui:insert name="menu"/>
                     </div>
+                    <h:form id="form1">
+                        <div id="container">
+                            <div id="form">
+                                <ui:insert name="form"/>
+                            </div>
                     <div id="tools">
                         <ui:insert name="tools"/>
                     </div>
+                        </div>
+                    </h:form>
                 </div>
             </div>
-        </div>
+        </f:ajax>
     </h:body>
 </html>

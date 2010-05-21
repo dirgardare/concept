@@ -13,37 +13,58 @@
     box-sizing: border-box;
 }
 
+/* Scrollbar stuff */
+/*
+::-webkit-scrollbar {
+    background-color: white;
+    width: 10px;
+    height: 13px;
+}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{border: 1px solid magenta;background-color:red;}
+::-webkit-scrollbar-track-piece{background-color:green;}
+::-webkit-scrollbar-thumb{background-color:blue;}
+::-webkit-scrollbar-corner{background-color:orange;}
+::-webkit-resizer{background-color:cyan;}
+
+html{
+    scrollbar-face-color: #d2d5e4;
+    scrollbar-highlight-color: #d2d5e4;
+    scrollbar-shadow-color: #d2d5e4;
+    scrollbar-3dlight-color: #123456;
+    scrollbar-arrow-color: #123456;
+    scrollbar-track-color: #d2d5e4;
+    scrollbar-darkshadow-color: #AEAEAE;
+}
+*/
+
 html,body,table {
     font-size: 12px;
     font-family: arial, verdana, helvetica;
-    scrollbar-3dlight-color:#ffd700;
-scrollbar-arrow-color:#ff0;
-scrollbar-base-color:#ff6347;
-scrollbar-darkshadow-color:#ffa500;
-scrollbar-face-color:#008080;
-scrollbar-highlight-color:#ff69b4;
-scrollbar-shadow-color:#f0f;
-scrollbar-track-color:#800080;
-
-
 }
 div,table{margin:0px; padding: 0px;}
 table {
-  border: outset 0px;
-  border-spacing: 2px;
-  }
+    border: outset 0px;
+    border-spacing: 2px;
+}
 td {
     margin:0px;
-  padding:0px;
+    padding:0px;
 }
 
 input,textarea {
-      border:1px solid gray;
+    border:1px solid gray;
 }
 
 #screen {
+    border: 3px double #dadada;
+}
+#screen, #content, #menu, #container, #form, #tools {
+    border: 1px solid #dadada;
+}
+#screen {
     position:absolute;
-    border: 1px solid black;
+    border: 3px double #dadada;
     background-color: #fff;
     top:0;
     right:0;
@@ -53,28 +74,28 @@ input,textarea {
 }
 #content {
     position:absolute;
-    border-top: 2px solid greenyellow;
+    border-top: 2px solid #cccccc;
     background-color: #fff;
-    top:100px;
-    right:10px;
-    left:10px;
-    bottom:10px;
+    top:20px;
+    right:5px;
+    left:5px;
+    bottom:5px;
 }
 #menu {
     position: absolute;
     overflow: hidden;
     left: 0px;
-    top: 0px;
+    top: 5px;
     bottom: 0px;
     width: 300px;  
 }
 #container {
     position: absolute;
     overflow: hidden;
-    left:310px;
+    left:305px;
     right:0px;
     bottom:0px;
-    top:0px;
+    top:5px;
 }
 #form {
     position:absolute;
@@ -88,7 +109,7 @@ input,textarea {
 #tools {
     position: absolute;
     overflow: hidden;
-    width: 190px;
+    width: 195px;
     bottom:0px;
     top:0px;
     right:0px;
@@ -139,21 +160,21 @@ input,textarea {
 }
 .ui-table-layout td.label {
     text-align: right;
-   /*width:50%;*/
+    /*width:50%;*/
 }
 .ui-table-layout td.left {
     text-align: left;
-   /*width:50%;*/
+    /*width:50%;*/
 }
 .ui-table-layout td.center {
     text-align: center;
-   /*width:50%;*/
+    /*width:50%;*/
 }
 
 .ui-label {
-text-align: right;
-width:100px;
-background-color:red;
+    text-align: right;
+    width:100px;
+    background-color:red;
 }
 
 .title {
