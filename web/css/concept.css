@@ -12,20 +12,30 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    background-color: white;
+    width: 10px;
+/*    height: 13px;*/
+}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{border: 1px solid magenta;background-color:red;}
+::-webkit-scrollbar-track-piece{background-color:green;}
+::-webkit-scrollbar-thumb{background-color:blue;}
+::-webkit-scrollbar-corner{background-color:orange;}
+::-webkit-resizer{background-color:cyan;}
+html{
 
+	scrollbar-face-color:		#d2d5e4;
+	scrollbar-highlight-color:	#d2d5e4;
+	scrollbar-shadow-color:	#d2d5e4;
+	scrollbar-3dlight-color:	#123456;
+	scrollbar-arrow-color:	#123456;
+	scrollbar-track-color:	#d2d5e4;
+	scrollbar-darkshadow-color:	#AEAEAE;
+}
 html,body,table {
     font-size: 12px;
     font-family: arial, verdana, helvetica;
-    scrollbar-3dlight-color:#ffd700;
-scrollbar-arrow-color:#ff0;
-scrollbar-base-color:#ff6347;
-scrollbar-darkshadow-color:#ffa500;
-scrollbar-face-color:#008080;
-scrollbar-highlight-color:#ff69b4;
-scrollbar-shadow-color:#f0f;
-scrollbar-track-color:#800080;
-
-
 }
 div,table{margin:0px; padding: 0px;}
 table {
